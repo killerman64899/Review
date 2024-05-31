@@ -17,7 +17,7 @@ public class GameLauncher {
         for(int k =0; k!=100; k++){
             sum += Values[k];
         }
-        avg = sum/100.0f;
+        avg = sum/100.0f; //average number of tries it takes for all the players to guess correctly
         System.out.println("The average chance of all of them guessing the same number is about 1 in " + sum);
         
     }
