@@ -1,18 +1,19 @@
 import java.util.Random;
 
 public class GuessGame {
+    
     Random r = new Random();
     public boolean won = false;
     boolean all;
-    byte p1 = -1, p2 = -1, p3 = -1;
+    Player P1;
+    Player P2;
+    Player P3;
+    
     public void startGame() {
-        
-        boolean b1, b2, b3;
+        boolean b1 = false, b2 = false, b3 = false;
         byte guess;
+        byte p1 = -1, p2 = -1, p3 = -1;
         
-        Player P1;
-        Player P2;
-        Player P3;
         P1 = new Player();
         P2 = new Player();
         P3 = new Player();
@@ -25,7 +26,7 @@ public class GuessGame {
         b2= false;
         b3= false;
         all= false;
-        // System.out.println("Welcome to the Guessing game or whatever this is");
+        // System.out.println("Welcome to the Guessing game");
         // System.out.println("Let me guess");
         guess = ((byte) r.nextInt(1, 8));
         // System.out.println("I guessed " + guess);
